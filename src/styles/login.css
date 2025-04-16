@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+}
+.body-container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(234, 234, 255);
+}
+.auth-container {
+	position: relative;
+	display: flex;
+	width: 95%;
+	max-width: 900px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 13px 0px rgb(206, 206, 206);
+	-moz-box-shadow: 0px 0px 13px 0px rgba(206, 206, 206,1);
+	box-shadow: 0px 0px 23px 0px rgba(206, 206, 206,1);
+}
+.login-container {
+	width: 50%;
+	padding: 80px 40px;
+}
+.overlay-container {
+	text-align: center;
+	background-color: #766DF4;
+	color: #fff;
+	width: 50%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.overlay {
+	padding: 50px 30px;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+.logo .real {
+	color: #fff;
+}
+.logo .chat {
+	color: rgb(254, 189, 68);
+}
+.hidden {
+	display: none;
+}
+.body-container .title {
+    margin-bottom: 30px;
+}
+.body-container .error {
+    padding: 10px;
+    background-color: rgb(189, 7, 7);
+    color: #fff;
+    width: 100%;
+	font-size: 13px;
+    margin-bottom: 25px;
+}
+.body-container .success {
+    padding: 10px;
+    background-color: rgb(8, 170, 43);
+    color: #fff;
+    width: 100%;
+	font-size: 13px;
+    margin-bottom: 25px;
+}
+.body-container button {
+	border-radius: 20px;
+	border: 1px solid #766DF4;
+	background-color: #766DF4;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+    cursor: pointer;
+	transition: transform 80ms ease-in;
+}
+.body-container button:active {
+	transform: scale(0.95);
+}
+.body-container button:focus {
+	outline: none;
+}
+.button-container {
+	margin-top: 30px;
+}
+.overlay-button {
+	margin-top: 20px !important;
+	background-color: #fff !important;
+	color: #766DF4 !important;
+	padding: 0px !important;
+}
+.overlay-button a {
+	display: block;
+	padding: 12px 45px;
+	text-decoration: none;
+	color: #766DF4
+}
+.body-container input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border-radius: 5px;
+}
+@media screen and (max-width: 650px) {
+	.hidden {
+		display: block;
+	}
+	.hidden .real {
+		color: #766DF4;
+	}
+	.body-container {
+		display: block;
+	}
+	.auth-container {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+	.login-container, .overlay-container {
+		width: 100%;
+	}
+}
